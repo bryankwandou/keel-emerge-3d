@@ -1,0 +1,55 @@
+:root {
+  /* Light Mode Palette */
+  --color-primary: #3a72b8;
+  --color-primary-variant: #295794;
+  --color-secondary: #14181f;
+  --color-background: #3a72b8;
+  --color-surface: rgba(20, 24, 31, 0.78);
+  --color-on-primary: #ffffff;
+  --color-on-surface: #f4f7fb;
+  --color-error: #dc2626;
+  --color-on-error: #ffffff;
+  --color-outline: rgba(255, 255, 255, 0.24);
+
+  /* Typography Scale */
+  --font-serif: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+  --font-display: 'Instrument Serif', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
+  --text-5xl: 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #4b83c8;
+    --color-primary-variant: #2d5d9b;
+    --color-secondary: #0f1319;
+    --color-background: #2f62a3;
+    --color-surface: rgba(15, 19, 25, 0.84);
+    --color-on-primary: #ffffff;
+    --color-on-surface: #f8fafc;
+    --color-error: #ef4444;
+    --color-on-error: #ffffff;
+    --color-outline: rgba(255, 255, 255, 0.28);
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-instrument {
+  font-family: var(--font-display);
+}
+
+.font-ui {
+  font-family: var(--font-sans);
+}
